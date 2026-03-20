@@ -2,6 +2,7 @@ services:
   - type: web
     name: ai-telegram-bot
     runtime: python
+    pythonVersion: "3.11"
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     plan: free
